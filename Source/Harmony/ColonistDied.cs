@@ -11,10 +11,12 @@ namespace RimStory.Harmony
     [HarmonyPatch(typeof(Pawn))]
     [HarmonyPatch("Kill")]
 
-    class ColonistDied
+    static class ColonistDied
     {
         static void Prefix(Pawn __instance)
         {
+            Log.Message("Pawn died");
+
             if (__instance.IsColonist)
             {
                 Log.Message("Pawn died");

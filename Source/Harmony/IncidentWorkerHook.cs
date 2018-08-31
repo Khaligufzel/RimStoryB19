@@ -10,21 +10,21 @@ namespace RimStory.Harmony
 {
     [HarmonyPatch(typeof(IncidentWorker))]
     [HarmonyPatch("TryExecute")]
-    class IncidentWorkerHookShort
+    static class IncidentWorkerHookShort
     {
         static void Postfix(IncidentWorker __instance, ref IncidentParms parms, bool __result)
         {
             if (__result)
             {
-                Log.Warning("name " + __instance.def.defName);
-                Log.Warning("duration " + __instance.def.durationDays);
-                Log.Warning("category " + __instance.def.category);
-                Log.Warning("letter label " + __instance.def.letterLabel);
-                Log.Warning("letter label " + __instance.def);
-                Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), __instance.def.letterText));
-                Log.Warning("letter label: " + __instance.def.letterText);
-                Log.Warning("letter label: " + __instance.def.label.Translate());
-                Log.Warning("letter label: " + __instance.ToString());
+                //Log.Warning("name " + __instance.def.defName);
+                //Log.Warning("duration " + __instance.def.durationDays);
+                //Log.Warning("category " + __instance.def.category);
+                //Log.Warning("letter label " + __instance.def.letterLabel);
+                //Log.Warning("letter label " + __instance.def);
+                //Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), __instance.def.letterText));
+                //Log.Warning("letter label: " + __instance.def.letterText);
+                //Log.Warning("letter label: " + __instance.def.label.Translate());
+                //Log.Warning("letter label: " + __instance.ToString());
 
                 if (__instance is IncidentWorker_AnimalInsanityMass)
                 {

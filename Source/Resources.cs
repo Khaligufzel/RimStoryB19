@@ -47,6 +47,8 @@ namespace RimStory
         public static bool showDeadColonistsInLog = true;
         public static bool showIncidentsInLog = true;
 
+
+
         public static void RESET_LOG()
         {
             eventsLog.Clear();

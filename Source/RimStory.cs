@@ -17,6 +17,8 @@ namespace RimStory
 
         protected override bool HarmonyAutoPatch => base.HarmonyAutoPatch;
 
+
+
         public override void DefsLoaded()
         {
             base.DefsLoaded();
@@ -118,9 +120,6 @@ namespace RimStory
 
         public override void SceneLoaded(Scene scene)
         {
-
-            ///////////////////////////////////// Dirty hacks for deleting static lists. Don't look. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
-
             base.SceneLoaded(scene);
             if (GenScene.InEntryScene == true)
             {

@@ -16,15 +16,15 @@ namespace RimStory.Harmony
         {
             if (__result)
             {
-                //Log.Warning("name " + __instance.def.defName);
-                //Log.Warning("duration " + __instance.def.durationDays);
-                //Log.Warning("category " + __instance.def.category);
-                //Log.Warning("letter label " + __instance.def.letterLabel);
-                //Log.Warning("letter label " + __instance.def);
-                //Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), __instance.def.letterText));
-                // Log.Warning("letter label: " + __instance.def.letterText);
-                //Log.Warning("letter label: " + __instance.def.label.Translate());
-                // Log.Warning("letter label: " + __instance.ToString());
+                Log.Warning("name " + __instance.def.defName);
+                Log.Warning("duration " + __instance.def.durationDays);
+                Log.Warning("category " + __instance.def.category);
+                Log.Warning("letter label " + __instance.def.letterLabel);
+                Log.Warning("letter label " + __instance.def);
+                Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), __instance.def.letterText));
+                Log.Warning("letter label: " + __instance.def.letterText);
+                Log.Warning("letter label: " + __instance.def.label.Translate());
+                Log.Warning("letter label: " + __instance.ToString());
 
                 if (__instance is IncidentWorker_AnimalInsanityMass)
                 {
@@ -62,15 +62,15 @@ namespace RimStory.Harmony
                     Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
                 }
 
-                if (__instance is IncidentWorker_RefugeePodCrash)
-                {
-                    Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
-                }
+                //if (__instance is IncidentWorker_RefugeePodCrash)
+                //{
+                //    Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
+                //}
 
-                if (__instance is IncidentWorker_Tornado)
-                {
-                    Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
-                }
+                //if (__instance is IncidentWorker_Tornado)
+                //{
+                //    Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
+                //}
 
                 if (__instance is IncidentWorker_WandererJoin)
                 {

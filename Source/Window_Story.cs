@@ -9,8 +9,9 @@ using SettingsHelper;
 
 namespace RimStory
 {
-    class Window_Story : MainTabWindow
+    public class Window_Story : MainTabWindow
     {
+
         public static int sie = 0;
         public static Vector2 vect = new Vector2(sie, sie);
         public static Vector2 logSize = new Vector2();
@@ -22,14 +23,14 @@ namespace RimStory
         Rect filterRect = new Rect();
 
         private static int defaultLogSize = 1000;
-       
-       
-        
+
+
+
 
         public override bool CausesMessageBackground()
-        {          
+        {
             return base.CausesMessageBackground();
-           
+
         }
 
         public override void Close(bool doCloseSound = true)
@@ -43,7 +44,7 @@ namespace RimStory
             if (RimStoryMod.settings.enableLogging)
             {
                 bigRect = rect;
-                
+
 
                 bigRect = new Rect(rect.position, new Vector2(rect.width, defaultLogSize + (35f * Resources.eventsLog.Count)));
                 logSize = new Vector2(rect.x, defaultLogSize + (35f * Resources.eventsLog.Count));
@@ -61,7 +62,7 @@ namespace RimStory
                         {
                             if (e.ShowInLog() != null)
                             {
-                                if (!Resources.showRaidsInLog && e is ABigThreat){}
+                                if (!Resources.showRaidsInLog && e is ABigThreat) { }
                                 else if (!Resources.showDeadColonistsInLog && e is AMemorialDay) { }
                                 else if (!Resources.showIncidentsInLog && e is IncidentShort) { }
                                 else
@@ -72,7 +73,7 @@ namespace RimStory
                             }
                         }
                     }
-                    if(Resources.eventsLog.Count == 0)
+                    if (Resources.eventsLog.Count == 0)
                     {
                         listing_Standard.AddLabelLine("Nothing here yet.");
                     }
@@ -80,7 +81,7 @@ namespace RimStory
 
                 Widgets.EndScrollView();
 
-                
+
 
                 listing_Standard.End();
 
@@ -98,7 +99,7 @@ namespace RimStory
         public override bool Equals(object obj)
         {
             return base.Equals(obj);
-        }    
+        }
 
         public override int GetHashCode()
         {
@@ -118,7 +119,7 @@ namespace RimStory
         public override void PostOpen()
         {
             base.PostOpen();
-            
+
         }
 
         public override void PreClose()
@@ -129,7 +130,7 @@ namespace RimStory
         public override void PreOpen()
         {
             base.PreOpen();
-            
+
         }
 
         public override string ToString()
@@ -145,7 +146,7 @@ namespace RimStory
         public override void WindowUpdate()
         {
             base.WindowUpdate();
-           
+
         }
 
         protected override void SetInitialSizeAndPosition()
@@ -155,7 +156,7 @@ namespace RimStory
 
         public void ExposeData()
         {
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
     }
 }

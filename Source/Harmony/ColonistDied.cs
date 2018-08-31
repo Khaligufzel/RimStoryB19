@@ -17,7 +17,7 @@ namespace RimStory.Harmony
         {
             if (__instance.IsColonist)
             {
-                
+                Log.Message("Pawn died");
                 Resources.eventsLog.Add(new AMemorialDay(Utils.CurrentDate(), __instance));
                
                 Resources.deadPawns.Add(__instance);

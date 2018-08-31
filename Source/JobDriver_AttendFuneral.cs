@@ -14,12 +14,11 @@ namespace RimStory
     {
         private TargetIndex graveToVisit = TargetIndex.A;
 
-        public override PawnPosture Posture => base.Posture;
+        
 
-        public override bool TryMakePreToilReservations()
+        public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            
-            return true;
+            throw new NotImplementedException();
         }
 
         protected override IEnumerable<Toil> MakeNewToils()

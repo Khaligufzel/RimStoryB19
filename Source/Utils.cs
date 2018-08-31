@@ -26,11 +26,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return 0;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
 
@@ -50,11 +50,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return 0;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
 
@@ -74,11 +74,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return 0;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
             return GenDate.Quadrum((long)num, vector.x);
@@ -98,11 +98,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return 0;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
 
@@ -122,11 +122,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return null;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
             int day = GenDate.DayOfSeason((long)num, vector.x) + 1;
@@ -142,11 +142,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return null;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num2 = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
             Quadrum quadrum = GenDate.Quadrum((long)num2, vector.x);
@@ -161,11 +161,11 @@ namespace RimStory
             }
             else
             {
-                if (Find.VisibleMap == null)
+                if (Find.CurrentMap == null)
                 {
                     return null;
                 }
-                vector = Find.WorldGrid.LongLatOf(Find.VisibleMap.Tile);
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
             }
             int num3 = (Find.TickManager.gameStartAbsTick == 0) ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
 

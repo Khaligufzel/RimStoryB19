@@ -3,6 +3,7 @@ using HugsLib;
 using HugsLib.Utils;
 using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine.SceneManagement;
 using Verse;
 
@@ -17,6 +18,11 @@ namespace RimStory
 
         protected override bool HarmonyAutoPatch => base.HarmonyAutoPatch;
 
+        static RimStory()
+        {
+            var harmony = HarmonyInstance.Create("com.github.khaligufzel.rimworld.rimstory");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
 
 
         public override void DefsLoaded()
@@ -37,7 +43,7 @@ namespace RimStory
         public override void MapGenerated(Map map)
         {
             base.MapGenerated(map);
-            
+
         }
 
         public override void MapLoaded(Map map)
@@ -46,6 +52,7 @@ namespace RimStory
             Resources.TEST_MAP = map;
 
             base.MapLoaded(map);
+        
 
             
 

@@ -32,9 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.0.9.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Assemblies\0Harmony.dll</HintPath>
+    <None Include="packages.config" />
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.1.2.0.1\lib\net35\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="1SettingsHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -60,12 +60,10 @@
     </Reference>
     <None Include="..\About\**" />
     <None Include="..\Defs\**" />
-    <None Include="..\Languages\Languages\DefInjected\ThingDef\PlagueGun.xml" />
     <None Include="..\Languages\Languages\FriendlyName.txt" />
     <None Include="..\Languages\Languages\Keyed\PlagueGun.xml" />
     <None Include="..\Languages\Languages\LangIcon.png" />
     <None Include="..\Languages\Languages\LanguageInfo.xml" />
-    <None Include="..\Languages\Languages\Strings\NameBanks\PlagueGun.txt" />
     <None Include="..\Patches\**" />
   </ItemGroup>
   <ItemGroup>

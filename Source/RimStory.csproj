@@ -38,7 +38,7 @@
     </Reference>
     <Reference Include="1SettingsHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Assemblies\1SettingsHelper.dll</HintPath>
+      <HintPath>..\..\RimStory\Assemblies\1SettingsHelper.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>

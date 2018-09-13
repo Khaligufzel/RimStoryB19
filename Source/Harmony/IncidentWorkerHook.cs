@@ -89,7 +89,7 @@ namespace RimStory.Harmony
                     Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), "RS_" + __instance.def.defName));
                 }
 
-                Log.Warning(__instance.def.defName);
+                //Log.Warning(__instance.def.defName);
 
             }
            

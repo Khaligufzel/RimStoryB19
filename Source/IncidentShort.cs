@@ -62,13 +62,13 @@ namespace RimStory
 
         public bool TryStartEvent()
         {
-            Log.Warning("Tried to start LogEvent (event added to wrong list?)"+ this);
+            //Log.Warning("Tried to start LogEvent (event added to wrong list?)"+ this);
             return false;
         }
 
         public bool TryStartEvent(Map map)
         {
-            Log.Warning("Tried to start LogEvent (event added to wrong list?)" + this);
+            //Log.Warning("Tried to start LogEvent (event added to wrong list?)" + this);
             return false;
         }
     }

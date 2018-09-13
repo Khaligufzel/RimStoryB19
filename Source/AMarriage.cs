@@ -63,7 +63,7 @@ namespace RimStory
         public string ShowInLog()
         {
             //return (date.day + " " + date.quadrum + " " + date.year + " " + pawn1.Name + " and " + pawn2.Name+" married.");
-            return (date.day + " " + date.quadrum + " " + date.year + " " + "AMarriage".Translate(new object[] {pawn1, pawn2}));
+            return (date.day + " " + date.quadrum + " " + date.year + " " + "AMarriage".Translate(new object[] {pawn1, pawn2}.ToString()));
         }
 
         public bool TryStartEvent()
@@ -105,7 +105,7 @@ namespace RimStory
 
                 Lord lord = LordMaker.MakeNewLord(pawn1.Faction, new LordJob_Joinable_Party(intVec, pawn1), map, null);
                 //Find.LetterStack.ReceiveLetter("Marriage anniversary", pawn1.LabelShort + " and " + pawn2.LabelShort + " anniversary.", LetterDefOf.PositiveEvent);
-                Find.LetterStack.ReceiveLetter("AMarriageLetter".Translate(), "AMarriageDesc".Translate(new object[] {pawn1.LabelShort, pawn2.LabelShort }), LetterDefOf.PositiveEvent);
+                Find.LetterStack.ReceiveLetter("AMarriageLetter".Translate(), "AMarriageDesc".Translate(new object[] {pawn1.LabelShort, pawn2.LabelShort }.ToString()), LetterDefOf.PositiveEvent);
 
 
                 foreach (Pawn p in pawn1.Map.mapPawns.FreeColonists)

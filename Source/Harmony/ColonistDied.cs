@@ -15,11 +15,11 @@ namespace RimStory.Harmony
     {
         static void Prefix(Pawn __instance)
         {
-            Log.Message("Pawn died");
+            //Log.Message("Pawn died");
 
             if (__instance.IsColonist)
             {
-                Log.Message("Pawn died");
+                //Log.Message("Pawn died");
                 Resources.eventsLog.Add(new AMemorialDay(Utils.CurrentDate(), __instance));
                
                 Resources.deadPawns.Add(__instance);

@@ -62,12 +62,12 @@ namespace RimStory
 
                 if (!recruitee.NonHumanlikeOrWildMan())
                 {
-                    return (date.day + " " + date.quadrum + " " + date.year + " " + "ARecruitment".Translate(new object[] { recruiter.Name, recruitee.Name }));
+                    return (date.day + " " + date.quadrum + " " + date.year + " " + "ARecruitment".Translate(new object[] { recruiter.Name, recruitee.Name }.ToString()));
 
                 }
                 else if (recruitee.NonHumanlikeOrWildMan())
                 {
-                    return (date.day + " " + date.quadrum + " " + date.year + " " + "ATamed".Translate(new object[] { recruiter.Name, recruitee.Name }));
+                    return (date.day + " " + date.quadrum + " " + date.year + " " + "ATamed".Translate(new object[] { recruiter.Name, recruitee.Name }.ToString()));
                 }
             }
             return null;
